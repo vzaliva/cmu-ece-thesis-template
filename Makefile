@@ -12,7 +12,7 @@ all: thesis.pdf
 
 clean:
 	latexmk -C
-	rm -f thesis.bbl
+	rm -f thesis.bbl thesis.brf
 
 thesis.pdf: thesis.tex cmu-ece-thesis.sty thesis.bib
 	latexmk -g --pdf -latexoption=-shell-escape thesis.tex
